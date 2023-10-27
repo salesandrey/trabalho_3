@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".register.view.RegisterView">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Jogador"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:gravity="center">
+    </TextView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/player_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Digite o seu nome"
+        android:text="" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/MaterialAlertDialog.Material3.Body.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione a sua classe" />
+
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/creature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criatura" />
+
+        <RadioButton
+            android:id="@+id/black_mage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mago Negro" />
+
+        <RadioButton
+            android:id="@+id/warrior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guerreiro" />
+
+        <RadioButton
+            android:id="@+id/white_mage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Curandeiro" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar personagem" />
+
+</LinearLayout>

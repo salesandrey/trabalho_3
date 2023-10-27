@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Jogadores"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:gravity="center">
+    </TextView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+
+    </Space>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_characters"
+        android:layout_width="match_parent"
+        android:layout_height="504dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/add"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO" />
+
+</LinearLayout>
